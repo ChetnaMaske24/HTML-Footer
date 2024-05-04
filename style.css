@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+header{
+    height: 250px;
+    width: 100%;
+    background-color: oldlace;
+    font-size: 80px;
+    font-weight: 500;
+    text-align: center;
+    padding-top: 6%;
+}
+footer{
+    height: 350px;
+    background-color: rgb(58, 58, 117);
+} 
+footer::before{
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    background: #AFAFB6;
+    left: 0;
+    top: 350px;
+}
+footer .content{
+    max-width: 1300px;
+    margin: auto;
+    padding: 30px 40px 40px 40px;
+}
+footer .content .top{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   margin-bottom: 30px;
+}
+.content .top .title{
+    color: #fff;
+    font-size: 50px;
+    font-weight: 500;
+}
+.content .top .icons{
+    display: flex;
+}
+.content .top .icons a{
+    width: 40px;
+    height: 30px;
+    margin: 0 8px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 32px;
+    color: #fff;
+    font-size: 17px;
+    text-decoration: none;
+}
+.content .top .icons a:nth-child(1){
+    background: #4267B2;
+}
+.content .top .icons a:nth-child(2){
+    background: #fff;
+    color: #4267B2;
+}
+.content .top .icons a:nth-child(3){
+    background: #db1c5c;
+}
+.content .top .icons a:nth-child(4){
+    background: #FF0000;
+}
+.content .top .icons a:nth-child(5){
+    background: #0077B5;
+}
+
+footer .content .boxex{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+footer .content .boxex .box{
+    width: calc(100% /5 - 10px);
+}
+
+.content .boxex .box li{
+    list-style: none;
+    margin: 15px 0;
+}
+.content .boxex .box li a{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+}
+.content .boxex .box .name{
+    color: #fff;
+    font-size: 25px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    position: relative;
+}
+.boxex .box .name::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    height: 2px;
+    width: 45px;
+    background: #fff;
+}
+.content .boxex .box input{
+    height: 30px;
+}
+.content .boxex .box button{
+    margin-top: 5px;
+    padding: 5px;
+    font-size: 15px;
+    background-color: gray;
+}
+
